@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamabdel/jammou_3_26052021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamabdel/jammou_3_26052021/issues"
+  },
+  "homepage": "https://github.com/jamabdel/jammou_3_26052021#readme",
+  "dependencies": {
+    "sass": "^1.34.0"
+  }
+}

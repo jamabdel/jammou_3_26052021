@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+* {
+box-sizing: border-box;
+}
+/*******************loader****************/
+.section{
+    position: relative;
+    text-align: center;
+    background-color: #f2f2f2;
+    height: 500px;
+    line-height: 500px;
+}
+.section2{
+    background-color: #f2f2f3;
+}
+
+.loader{
+    position:center ;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.loader-double{
+    border-radius: 50px;
+    border: 6px solid #9356DC;
+    border-top-color: #FF79DA;
+    border-bottom-color: #99E2D0;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    0%{ transform: rotate(0deg);}
+    0%{ transform: rotate(360deg);}
+}
+.loader-double::after{
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: #FF79DA;
+    border-bottom-color: #99E2D0;
+    opacity: 0.6;
+    animation: spin 1s linear infinite;
+    animation: spinreverse 2s linear infinite;
+}
+@keyframes spin{
+    0%{ transform: rotate(0deg);}
+    0%{ transform: rotate(360deg);}
+}
+@keyframes spinreverse{ 
+    0%{ transform: rotate(0deg);}
+    0%{ transform: rotate(-360deg);}
+    }
+
+.loader {
+background: -webkit-linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
+width: 100%;
+height: 100%;
+line-height: 100%;
+font-family: Shrikhand, sans-serif;
+font-size: x-large;
+vertical-align: middle;
+text-align: center;
+position: fixed;
+z-index: 9999;
+top: 0;
+left: 0;
+pointer-events: none;
+animation: loaderoh  1s ease-in-out 3s forwards;
+visibility: hidden;
+}
+
+/*******************loader****************/
+
+.logo{
+box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80px;
+padding: 20px;
+}
+.searchbox
+{
+display: flex;
+justify-content: center;
+padding: 1.25rem 1rem;
+background-color: #eaeaea;
+font-size: 1.2rem;
+position: relative;
+}
+
+.iconemap {
+    background-color: #eaeaea;
+    font-size: 19.7px;
+    text-align: center;
+    
+  }
+input {
+border: none;
+background: #eaeaea;
+font-size: 1rem;
+padding: 20px 5px 20px 5px;
+margin-top: 5px;
+text-align: center;
+width: 150px;
+    }
