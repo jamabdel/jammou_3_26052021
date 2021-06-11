@@ -5,53 +5,146 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ohmyfood</title>
-
         <!--css-->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
         <!--css-->
 
-        <!--font--> 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link href="src/fonts" rel="stylesheet">
-        <!--font-->
   </head>
   <body>
 
-    <!-- Loader -->
+    <!-- Loader 
     <div class="loader">
     <section class="section section-2">
     <span class="loader loader-double"></span>
     Ohmyfood
   </section>
-</div>
-
+</div>-->
     <!-- Loader -->
 
           <!--header-->
     <header>
       <a href="index.html">
         <div class="logo">
-          <img class="logo" src="/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="Logo">
+          <img  src="/img/ohmyfood@2x.svg" alt="Logo">
         </div>
       </a>
     </header >
-
-    <div class="header">
-      <form class="containerform">
-        <i class="fas fa-map-marker-alt  iconemap"></i>
-        <input class="search-input"  name="place" id="place" placeholder="Paris,Belleville" />
+   <!--search--> 
+    <div class="search">
+      <form method="post" action="#">
+        <label for="id_search">		
+          <span class="fas fa-map-marker-alt"></span>
+        </label>
+        <input type="search" name="search" id="id_search" class="search__input" value="Paris, Belleville">
       </form>
     </div>
+   <!--search--> 
+<!--explorer-->
+    <section class="explorer">
+      <h2>Réservez le menu qui vous convient</h2>
+      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+      <div>
+        <a href="" class="explorer_link">
+          <div class="button">
+              Explorer nos restaurants
+          </div>
+        </a>
+      </div>
+    </section>
+    <!--explorer-->
+<!--run-->
+    <section class="run">
+      <h2 class="run__title">Fonctionnement</h2>
+      <div class="run__item">
+        <div class="run__number">1</div>
+        <i class="run__icon fas fa-mobile-alt"></i>
+        <h3 class="run__subtitle">Choisissez un restaurant</h3>
+      </div>
+      <div class="run__item">
+        <div class="run__number">2</div>
+        <i class="run__icon fas fa-list-ul"></i>
+        <h3 class="run__subtitle">Composez votre menu</h3>
+      </div>
+      <div class="run__item">
+        <div class="run__number">3</div>
+        <i class="run__icon fas fa-store"></i>
+        <h3 class="run__subtitle">Dégustez au restaurant</h3>
+      </div>
+    </section>
+    <!--run--> 
+    <!--Restaurants-->
+    <section class="box">
 
+      <h2>Restaurants</h2>
 
-        <!--header-->
-        <!--Recherche-->
-        
-    <!--Hébergement-->
-    <!--Activités-->
-    
+      <div class="restocarte">
+
+        <article class="carte">
+          <a href="" >
+            <div class="carte__img">
+              <img src="/img/la_palette_du_gout.jpg" class="photo ajust_1" alt="la Palette du Goût">
+              </div>
+          </a>
+            <div class="carte__info">
+              <div>
+                <h4>La palette du goût</h4>
+                <p>Ménilmontant</p>
+              </div>
+              <p class="carte__new">Nouveau</p>
+            </div>
+            
+          
+        </article>
+        <article class="carte">
+          <a href="" >
+            <div class="carte__img">
+              <img src="/img/la_palette_du_gout.jpg" class="photo ajust_1" alt="la Palette du Goût">
+              </div>
+          </a>
+            <div class="carte__info">
+              <div>
+                <h4>La note enchantée</h4>
+                <p>Charonne</p>
+              </div>
+              <p class="carte__new">Nouveau</p>
+            </div>
+            
+          
+        </article>
+        <article class="carte">
+          <a href="" >
+            <div class="carte__img">
+              <img src="/img/la_palette_du_gout.jpg" class="photo ajust_1" alt="la Palette du Goût">
+              </div>
+          </a>
+            <div class="carte__info">
+              <div>
+                <h4>À la française</h4>
+                <p>Cité Rouge</p>
+              </div>
+              
+            </div>
+            
+          
+        </article>
+        <article class="carte">
+          <a href="" >
+            <div class="carte__img">
+              <img src="/img/la_palette_du_gout.jpg" class="photo ajust_1" alt="la Palette du Goût">
+              </div>
+          </a>
+            <div class="carte__info">
+              <div>
+                <h4>Le délice des sens</h4>
+                <p>Folie Méricourt</p>
+              </div>
+             
+            </div>
+            
+          
+        </article>
+    <!--Restaurants-->
       <!--footer-->
   </body>
 </html>

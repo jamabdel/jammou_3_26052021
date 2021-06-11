@@ -1,6 +1,6 @@
 .search {
 	padding: 20px 0;
-	background: linear-gradient(darken($colorgri, 20%), darken($colorgri, 5%) 10%);
+	background: linear-gradient(darken(#F6F6F6, 20%), darken(#F6F6F6, 5%) 10%);
 	display: flex;
 	justify-content: center;
 	&__input {
@@ -34,13 +34,13 @@
 
 .button {
     display: flex;
-    background: linear-gradient(175deg,$color__ros, $color__vio);
+    background: linear-gradient(175deg,#FF79DA, $color3);
     box-shadow: 2px 5px 10px darken(#f6f6f6, 30%);
     justify-content: center;
     border-radius: 2rem;
     margin-bottom: 1rem;
     min-width: 15rem;
-	color: $color__b;
+	color: $color2;
 	height: 3.5rem;
 	padding: 0 2rem;
 	align-items: center; 						
@@ -50,8 +50,8 @@
 		height: 100%;
 		width: 100%;
 		border-radius: 2rem;
-		background-color: $color__b;		
-		box-shadow: 2px 5px 5px $color__n;
+		background-color: $color2;		
+		box-shadow: 2px 5px 5px $color1;
 		position: absolute;						
 		left: 0;								
 		top: 0;									
@@ -87,15 +87,15 @@
       padding: 1em;
 
       &:hover {
-        background: lighten($color__vio, 35%);
+        background: lighten($color3, 35%);
         i {
-          color: $color__vio;
+          color: $color3;
         }
       }
     }
     &__number {
       color: white;
-      background: $color__vio;
+      background: $color3;
       padding: 5px 10px;
       border-radius: 50%;
       position: absolute;
@@ -137,6 +137,71 @@
         padding: 1em;
 		display: flex;
 		align-items: center;
+      }
+    }
+  
+  }
+
+  /*--Restaurants--*/
+
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F6F6F6;
+    padding: 2rem;
+    }
+
+    .carte {
+      display: flex;
+      flex-direction: column;
+      background-color: $color2; 
+      width: 400px;							
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 2px 5px 10px darken($color6, 20%);
+      margin-bottom: 2rem;						
+   
+    &__img {
+      width: 100%;
+      height: 13rem;
+      .photo {
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform: scale(1);
+      
+      }
+    }
+    &__info {
+      display: flex;		
+      padding: 0 0 0 1rem;
+	    justify-content: space-between;	
+	    align-items: flex-end; 		
+      h4 {
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+    }
+   
+    &__new {
+      text-align: center;
+      color: darken($color5, 50%);
+      background-color: $color5;
+      position: relative;
+      border-radius: 4px;
+      top: -210px;
+      right: -280px;
+      width: 100px;
+      height: 30px;	
+      padding: 2px;	
+          }
+   
+    &:hover {
+      .photo {
+        transition: transform 00ms 100ms ease-in;
+        transform: scale(1.1);
       }
     }
   
