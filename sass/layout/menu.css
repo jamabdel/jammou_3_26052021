@@ -1,0 +1,25 @@
+.headermenu {
+  background-image: url("/img/la_palette_du_gout.jpg");
+}
+
+.menu {
+  background-image: url("/img/la_palette_du_gout.jpg");
+  width: 1600px;
+  height: 400px;
+}
+
+.bon {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -webkit-box-shadow: non;
+          box-shadow: non;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}/*# sourceMappingURL=menu.css.map */

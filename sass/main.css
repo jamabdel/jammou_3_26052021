@@ -49,6 +49,53 @@ header .logo img {
   width: 180px;
 }
 
+footer {
+  background: #2c2b2b;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+footer .footerlogo img {
+  height: 20px;
+  display: block;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin-bottom: 0.8em;
+}
+footer a {
+  color: white;
+  display: block;
+  padding: 0.5em;
+  text-decoration: none;
+}
+footer i {
+  color: white;
+  padding-right: 0.5em;
+}
+
+@media (min-width: 1190px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 8em 8em;
+  }
+}
 .search {
   padding: 20px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c3c3c3), color-stop(10%, #e9e9e9));
@@ -69,7 +116,7 @@ header .logo img {
 
 .explorer {
   text-align: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,7 +149,7 @@ header .logo img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background: linear-gradient(175deg, #ff79da, #9356DC);
   -webkit-box-shadow: 2px 5px 10px #aaaaaa;
           box-shadow: 2px 5px 10px #aaaaaa;
   -webkit-box-pack: center;
@@ -128,14 +175,12 @@ header .logo img {
   -webkit-box-shadow: 2px 5px 5px #000000;
           box-shadow: 2px 5px 5px #000000;
   position: absolute;
-  left: 0;
-  top: 0;
   opacity: 0;
-  -webkit-transition: opacity 600ms ease-in-out;
-  transition: opacity 600ms ease-in-out;
+  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 .button:hover::after {
-  opacity: 0.2;
+  opacity: 0.33;
 }
 
 .run {
@@ -256,7 +301,7 @@ header .logo img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 2rem;
 }
 
@@ -305,9 +350,6 @@ header .logo img {
   margin-top: 1rem;
   margin-bottom: 0;
 }
-.carte__info p {
-  margin-top: 0.5rem;
-}
 .carte__new {
   text-align: center;
   color: #1b6150;
@@ -315,14 +357,10 @@ header .logo img {
   position: relative;
   border-radius: 4px;
   top: -210px;
-  right: -280px;
+  /*right: -280px;*/
   width: 100px;
   height: 30px;
   padding: 2px;
-  text-decoration: none;
-}
-.carte p {
-  text-decoration: none;
 }
 .carte:hover .photo {
   -webkit-transition: -webkit-transform 0ms 100ms ease-in;
@@ -331,4 +369,103 @@ header .logo img {
   transition: transform 0ms 100ms ease-in, -webkit-transform 0ms 100ms ease-in;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media (min-width: 1190px) {
+  .restocarte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 8em 8em;
+  }
+}
+.coeur {
+  font-size: 2rem;
+  position: relative;
+}
+
+.coeur > .fas {
+  color: #9356DC;
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.coeur:hover > .fas {
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.headermenu {
+  background-image: url("/img/la_palette_du_gout.jpg");
+}
+
+.menu {
+  background-image: url("/img/la_palette_du_gout.jpg");
+  width: 1600px;
+  height: 400px;
+}
+
+.bon {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -webkit-box-shadow: non;
+          box-shadow: non;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.loader {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 100px;
+  background: white;
+  padding-bottom: 100px;
+  -webkit-box-shadow: 0px 40px 60px -20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 40px 60px -20px rgba(0, 0, 0, 0.2);
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  background: #cb45ec;
+  border-radius: 50%;
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+}
+.spinner:after, .spinner:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.spinner-1:after {
+  position: absolute;
+  top: -4px;
 }/*# sourceMappingURL=main.css.map */

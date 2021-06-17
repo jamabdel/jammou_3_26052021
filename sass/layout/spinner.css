@@ -1,0 +1,33 @@
+.loader {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 100px;
+  background: white;
+  padding-bottom: 100px;
+  -webkit-box-shadow: 0px 40px 60px -20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 40px 60px -20px rgba(0, 0, 0, 0.2);
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  background: #cb45ec;
+  border-radius: 50%;
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+}
+.spinner:after, .spinner:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.spinner-1:after {
+  position: absolute;
+  top: -4px;
+}/*# sourceMappingURL=spinner.css.map */

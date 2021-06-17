@@ -25,6 +25,41 @@ h1 {
   box-sizing: border-box;
 }
 
+@keyframes spinny {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes fill {
+  from {
+    transform: scale(0);
+    animation-timing-function: ease-in-out;
+  }
+  95% {
+    transform: scale(1.1);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes homespinner {
+  0% {
+    transform: scale(1);
+  }
+  97% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 header {
   display: flex;
   flex-flow: row wrap;
@@ -38,6 +73,39 @@ header .logo img {
   width: 180px;
 }
 
+footer {
+  background: #2c2b2b;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+footer .footerlogo img {
+  height: 20px;
+  display: block;
+  filter: invert(1);
+  margin-bottom: 0.8em;
+}
+footer a {
+  color: white;
+  display: block;
+  padding: 0.5em;
+  text-decoration: none;
+}
+footer i {
+  color: white;
+  padding-right: 0.5em;
+}
+
+@media (min-width: 1190px) {
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 8em 8em;
+  }
+}
 .search {
   padding: 20px 0;
   background: linear-gradient(#c3c3c3, #e9e9e9 10%);
@@ -53,7 +121,7 @@ header .logo img {
 
 .explorer {
   text-align: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -76,7 +144,7 @@ header .logo img {
 
 .button {
   display: flex;
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background: linear-gradient(175deg, #ff79da, #9356DC);
   box-shadow: 2px 5px 10px #aaaaaa;
   justify-content: center;
   border-radius: 2rem;
@@ -96,13 +164,11 @@ header .logo img {
   background-color: #FFFFFF;
   box-shadow: 2px 5px 5px #000000;
   position: absolute;
-  left: 0;
-  top: 0;
   opacity: 0;
-  transition: opacity 600ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 .button:hover::after {
-  opacity: 0.2;
+  opacity: 0.33;
 }
 
 .run {
@@ -189,7 +255,7 @@ header .logo img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 2rem;
 }
 
@@ -224,9 +290,6 @@ header .logo img {
   margin-top: 1rem;
   margin-bottom: 0;
 }
-.carte__info p {
-  margin-top: 0.5rem;
-}
 .carte__new {
   text-align: center;
   color: #1b6150;
@@ -234,7 +297,7 @@ header .logo img {
   position: relative;
   border-radius: 4px;
   top: -210px;
-  right: -280px;
+  /*right: -280px;*/
   width: 100px;
   height: 30px;
   padding: 2px;
@@ -242,6 +305,89 @@ header .logo img {
 .carte:hover .photo {
   transition: transform 0ms 100ms ease-in;
   transform: scale(1.1);
+}
+
+@media (min-width: 1190px) {
+  .restocarte {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 8em 8em;
+  }
+}
+.coeur {
+  font-size: 2rem;
+  position: relative;
+}
+
+.coeur > .fas {
+  color: #9356DC;
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  transform: scale(0);
+}
+
+.coeur:hover > .fas {
+  animation-timing-function: ease-in-out;
+  transform: scale(1);
+}
+
+.headermenu {
+  background-image: url("/img/la_palette_du_gout.jpg");
+}
+
+.menu {
+  background-image: url("/img/la_palette_du_gout.jpg");
+  width: 1600px;
+  height: 400px;
+}
+
+.bon {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: non;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.loadingPage {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  transform: scale(0);
+  animation: homespinner 2s;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  background: #FF79DA left 50%/100% 60% no-repeat url("/img/restaurant.svg");
+  border-radius: 50%;
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+}
+.spinner:after, .spinner:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.spinner-1:after {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #99E2D0;
+  animation: spinny 2s linear infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
