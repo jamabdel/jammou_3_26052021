@@ -1,20 +1,25 @@
 .coeur {
-  font-size: 2rem;
-  position: relative;
-}
-
-.coeur > .fas {
-  color: #9356DC;
+  font-size: 1.5rem;
   position: absolute;
-  left: 0;
-  top: 0.15rem;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  right: 8%;
+  top: 40%;
 }
-
-.coeur:hover > .fas {
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+.coeur:hover .fas {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+.coeur .far {
+  position: absolute;
+}
+.coeur .fas {
+  color: #d480d4;
+  position: absolute;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }/*# sourceMappingURL=coeur.css.map */

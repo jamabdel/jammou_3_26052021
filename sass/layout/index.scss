@@ -139,63 +139,140 @@
 
 /*--Restaurants--*/
 
-.box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #f6f6f6;
-  padding: 2rem;
-}
 
-.carte {
+
+ .box {
   display: flex;
   flex-direction: column;
-  background-color: $color2;
-  width: 400px;
-  border-radius: 1.5rem;
-  overflow: hidden;
-  box-shadow: 2px 5px 10px darken($color6, 20%);
-  margin-bottom: 2rem;
+  align-items: center;
+  background-color: $color6;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+.carte {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: $shadow;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  &:hover {
+    box-shadow: 0 15px 30px -10px black;
+  }
 
-  &__img {
+  .image {
+    position: relative;
     width: 100%;
-    height: 13rem;
-    .photo {
-      max-width: 100%;
-      max-height: 100%;
+    height: 180px;
+    img {
       width: 100%;
+      height: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
       object-fit: cover;
       transform: scale(1);
     }
+    .new {
+      background-color: $color5;
+      text-align: center;
+      font-size: 16px;
+      width: 90px;
+      padding: 5px 1px;
+      position: absolute;
+      right: 4%;
+      top: 8%;
+      border-radius: 3px;
+      color: green;
+      height: 30px;
+    }
+
+    &:hover .photo{ 
+    
+        transition: transform 200ms 100ms ease-in;
+        transform: scale(1.1);
+        overflow: hidden;
+      }
+
   }
-  &__info {
-    display: flex;
-    padding: 0 0 0 1rem;
-    justify-content: space-between;
-    align-items: flex-end;
-    h4 {
-      margin-top: 1rem;
-      margin-bottom: 0;
+  .info {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+    line-height: 0px;
+    .titre {
+      width: 80%;
+    }
+    p {
+      font-size: 14px;
+      margin-left: 10px;
+      font-weight: 500;
+    }
+    h5 {
+      font-weight: bold;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+    
+  }
+}
+@media all and (max-width: 425px) {
+  h4 {
+    width: 90%;
+    text-align: left;
+  }
+  .explorer h4 {
+    text-align: center;
+  }
+}
+@media all and (min-width: 426px) and (max-width: 768px) {
+  #section_menu {
+    a {
+      width: 40%;
     }
   }
+  .box{
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    h5 {
+      width: 100%;
+      text-align: center;
+    }
+    .carte {
 
-  &__new {
-    text-align: center;
-    color: darken($color5, 50%);
-    background-color: $color5;
-    position: relative;
-    border-radius: 4px;
-    top: -210px;
-    /*right: -280px;*/
-    width: 100px;
-    height: 30px;
-    padding: 2px;
+    width: 40%;
+    margin-right: 30px;
+    .coeur {
+      right: 11%;
+      }
+    }
   }
-
-  &:hover {
-    .photo {
-      transition: transform 00ms 100ms ease-in;
-      transform: scale(1.1);
+}
+@media all and (min-width: 769px) {
+  #section_menu {
+    a {
+      width: 30%;
+    }
+  }
+  .box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    h4 {
+      width: 100%;
+      text-align: center;
+    }
+    .carte {
+    width: 20%;
+    margin-right: 30px;
+    .coeur {
+      right: 11%;
+      }
     }
   }
 }

@@ -1,18 +1,20 @@
 .coeur {
-    font-size: 2rem;
-    position: relative;
-     }
-  .coeur > .fas {
-    color: #9356DC;
-    position: absolute;						
-    left: 0;								
-    top: .15rem;
-    transform: scale(0);
-        
-  }
-  .coeur:hover > .fas {
-    animation-timing-function: ease-in-out;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 8%;
+  top: 40%;
+  &:hover .fas {
+    transform-origin: bottom;
+    transition: transform 400ms;
     transform: scale(1);
-    
   }
- 
+  .far {
+    position: absolute;
+  }
+  .fas {
+    color:rgb(212, 128, 212);
+    position: absolute;
+    transform: scale(0);
+   
+  }
+}

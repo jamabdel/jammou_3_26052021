@@ -34,3 +34,37 @@
 	  transform: scale(0);
 	}
 }
+
+@keyframes loadingSpinner {
+	from {
+		z-index: 15;
+		transform: rotate(0deg);
+		
+   }
+	to {
+		z-index: -5;
+		transform: rotate(1080deg);
+		
+   }
+
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translatex(-150px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes check {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
