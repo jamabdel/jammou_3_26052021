@@ -523,12 +523,12 @@ header .fa-arrow-left {
   font-size: 20px;
 }
 
-button {
+.btn {
   position: fixed;
   top: 85%;
   left: -300%;
 }
-button p {
+.btn p {
   font-weight: 250px;
   text-align: center;
 }
