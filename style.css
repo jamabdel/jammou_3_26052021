@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 body {
@@ -527,7 +526,7 @@ header .fa-arrow-left {
 button {
   position: fixed;
   top: 85%;
-  left: 100%;
+  left: -300%;
 }
 button p {
   font-weight: 250px;
@@ -627,7 +626,7 @@ button p {
   animation: spinny 2s linear infinite;
 }
 
-button {
+.btn {
   color: #fbfbfb;
   height: 3.5rem;
   min-width: 15rem;
@@ -637,20 +636,11 @@ button {
   padding: 0 2rem;
   margin-bottom: 1rem;
   display: flex;
-  /* A */
-  /* pour alignement du texte de btn */
   justify-content: center;
-  /* A */
-  /* alignement horizontal du texte de btn */
   align-items: center;
-  /* A */
-  /* alignement vertical du texte de btn */
   position: relative;
-  /* G */
-  /* pour positionnement de ::before dans btn */
 }
-button::after {
-  /* éclaircissement de btn • élément en-dessous du texte → ::after */
+.btn::after {
   content: "";
   height: 100%;
   width: 100%;
@@ -658,21 +648,13 @@ button::after {
   background-color: #9356DC;
   box-shadow: 2px 5px 5px #000000;
   position: absolute;
-  /* G */
-  /* pour positionnement de ::after dans btn */
   left: 0;
-  /* G */
-  /* positionnement de ::after dans btn */
   top: 0;
-  /* G */
-  /* positionnement de ::after dans btn */
   opacity: 0;
-  /* état initial de ::after */
   transition: opacity 500ms ease-in-out;
 }
-button:hover::after {
+.btn:hover::after {
   opacity: 0.2;
-  /* état final de ::after */
 }
 
 /*# sourceMappingURL=style.css.map */

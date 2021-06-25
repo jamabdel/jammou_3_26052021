@@ -1,4 +1,4 @@
-button {
+.btn {
 	color: #fbfbfb;
 	height: 3.5rem;
 	min-width: 15rem;
@@ -7,26 +7,26 @@ button {
 	box-shadow: 2px 5px 10px darken(#F6F6F6, 30%);				
 	padding: 0 2rem;
 	margin-bottom: 1rem;
-	display: flex;								/* A */ /* pour alignement du texte de btn */
-	justify-content: center;					/* A */ /* alignement horizontal du texte de btn */
-	align-items: center; 						/* A */ /* alignement vertical du texte de btn */
-	position: relative;							/* G */ /* pour positionnement de ::before dans btn */
-	&::after {									/* éclaircissement de btn • élément en-dessous du texte → ::after */		
+	display: flex;								
+	justify-content: center;					
+	align-items: center; 					
+	position: relative;						
+	&::after {							
 		content:"";
 		height: 100%;
 		width: 100%;
 		border-radius: 2rem;
 		background-color: #9356DC;		
 		box-shadow: 2px 5px 5px #000000;
-		position: absolute;						/* G */ /* pour positionnement de ::after dans btn */
-		left: 0;								/* G */ /* positionnement de ::after dans btn */
-		top: 0;									/* G */ /* positionnement de ::after dans btn */
-		opacity: 0;								/* état initial de ::after */
+		position: absolute;						
+		left: 0;							
+		top: 0;								
+		opacity: 0;							
 		transition: opacity 500ms ease-in-out;
 	}
 	&:hover {
 		&::after {
-			opacity: .2;						/* état final de ::after */
+			opacity: .2;					
 		}
 	}
 }
