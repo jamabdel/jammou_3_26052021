@@ -1,11 +1,12 @@
 .coeur {
+  cursor: pointer;
   font-size: 1.5rem;
   position: absolute;
   right: 8%;
   top: 40%;
   &:hover .fas {
     transform-origin: bottom;
-    transition: transform 400ms;
+    transition: transform 1000ms;
     transform: scale(1);
   }
   .far {

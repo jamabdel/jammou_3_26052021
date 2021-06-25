@@ -1,14 +1,28 @@
 
+.loader{
+  background: content-box radial-gradient( #99E2D0,#FF79DA);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  animation: loading 1s ease-in-out 2s forwards;
+}
+
+
+
+
 .loadingPage {
   display: flex;
   justify-content: center;
   position: absolute;
   width: 100%;
-  top: 10%;
+  top: 50%;
   transform: scale(0);
   animation: homespinner 2s ease-in-out;
-  background: white ;
  
+  
 }
 
 .spinner{

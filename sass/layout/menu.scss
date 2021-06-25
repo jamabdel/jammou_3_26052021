@@ -1,18 +1,18 @@
 header {
 
-    .logo img{
-        width: 100%;
-        padding: 35px 0 0 0 ;
-    }
-    padding: 0;
-    .fa-arrow-left {
-      position: absolute;
-      left: 20px;
-      top: 35px;
-      color: black;
-      font-size: 1.5rem;
-    }
+  .logo img{
+      width: 100%;
+      padding: 35px 0 0 0 ;
   }
+  padding: 0;
+  .fa-arrow-left {
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    color: black;
+    font-size: 1.5rem;
+  }
+}
 
 .headerimg {
     height: 300px;
@@ -29,7 +29,8 @@ header {
 
 .restaurant {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1300px;
+    height: 100%;
     margin: 0 auto;
     background-color: #efefef;
     border-top-left-radius: 50px;
@@ -39,104 +40,168 @@ header {
     display: flex;
     flex-direction: column;
     }
-    .restauranttitle {
-        width: 100%;
-        @include flexbox($justify: space-between);
-        font-size: 24px;
-        font-weight: normal;
-        font-family: 'Shrikhand', cursive;
-      }
-      .titlecontainer{
-        display: flex;
-        align-items: center;
-        .coeur {
-        top: 20%;
-      }
-    }
+
+.restauranttitle {
+    width: 100%;
+    @include flexbox($justify: space-between);
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Shrikhand', cursive;
+    padding-left: 20px;
+  }
+.titlecontainer{
+    display: flex;
+    align-items: center;
+    .coeur {
+    top: 50px;
+  }
+}
 
 .menu {
-        width: 100%;
-        
-        .type {
-          border-bottom: 2px solid $color5;
-          margin: 2em 0 1em;
-          padding: 2px 0;
-          font-size: 16px;
-          font-weight: 400;
-          width: 35px;
-          
-        }
-        .meal {
-          position: relative;
-          background: white;
-          box-shadow: $shadow;
-          border-radius: 15px;
-          margin: 1em auto;
-          overflow: hidden;
-          max-width: 360px;
-          min-height: 60px;
-          padding: 0.5em;
-          cursor: pointer;
-          animation: 3s fadeIn;
-
-          &:hover .title,
-          /*&:hover .text {
-            transition: all 2s ease;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-            width: 200px;
-          }*/
-          &:hover .icon {
-            transition: right 0.5s ease;
-            right: 0;
-          }
-          &:hover i {
-            animation: check 1s ease;
-          }
-          &:hover .price {
-            transition: right 0.5s ease;
-            right: 70px;
-          }
-        }
-
-        .price {
-          position: absolute;
-          font-size: 14px;
-          right: 20px;
-          bottom: 8px;
-          
-        }
-        .text {
-          padding: 2px 0 0;
-          font-size: 14px;
-          max-width: 260px;
-        }
-
-        .title {
-          max-width: 250px;
-          padding: 2px 0;
-          font-size: 16px;
-        }
+  width: 100%;
 
 
-        .icon {
-          border-radius: 0 15px 15px 0;
-          justify-content: center;
-          flex-flow: row wrap;
-          align-items: center;
-          background: $color5;
-          position: absolute;
-          display: flex;
-          right: -50px;
-          width: 50px;
-          height: 100%;
-          top: 0;
-          i {
-            color: white;
-            font-size: 18px;
-          }
-        }
-      }
+
+  .type {
+    border-bottom: 2px solid $color5;
+    margin: 2em 0 1em;
+    padding: 2px 0;
+    font-size: 16px;
+    font-weight: 400;
+    width: 35px;
     
+  }
+  .meal {
+    position: relative;
+    background: white;
+    box-shadow: $shadow;
+    border-radius: 15px;
+    margin: 1em auto;
+    overflow: hidden;
+    max-width: 360px;
+    height: 70px;
+    padding: 0.5em;
+    cursor: pointer;
+    animation: group 800ms both ease-out;
+
+    &:hover .title,
+    &:hover .text {
+      transition: all 2s ease;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 200px;
+    }
+    &:hover .icon {
+      transition: right 0.5s ease;
+      right: 0;
+    }
+    &:hover i {
+      animation: check 1s ease;
+    }
+    &:hover .price {
+      transition: right 0.5s ease;
+      right: 70px;
+      
+    }
+  }
+
+  .price {
+    position: absolute;
+    font-size: 14px;
+    right: 20px;
+    bottom: 8px;
+    
+  }
+  .text {
+    font-size: 14px;
+    max-width: 260px;
+    margin: 5px 0 0 15px;
+  }
+
+  .title {
+    max-width: 250px;
+    font-size: 16px;
+    margin: 5px 0 5px 15px;
+  }
+
+
+  .icon {
+    border-radius: 0 15px 15px 0;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    background: $color5;
+    position: absolute;
+    display: flex;
+    right: -50px;
+    width: 50px;
+    height: 100%;
+    top: 0;
+    i {
+      color: white;
+      font-size: 20px;
+
+      
+    }
+  }
+}
+
+button{
+
+position: fixed;
+top: 85%;
+left: 100%;
+p{
+  font-weight: 250px;
+  text-align: center;
+}
+}
+
+
+
+
+@media (min-width: 1290px){
+ .menu {
   
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+     .mac{
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  }
+  }
+  .mac {
+display: flex;
+flex-direction: column;
+    
+  }
+  .meal{
+    width: 500px;
+    height: 80px;
+  }
+  .name {
+    justify-content: center;
+  }
+  .content {
+    max-width: none;
+    //@include flexbox($align: flex-start);
+  }
+  section {
+    padding: 0 1em;
+  }
+  .type {
+    display: flex;
+    //flex-direction: column;
+    flex-wrap: wrap;
+}
+.explorer_link{
+  position: fixed;
+  top: 85%;
+  left: 37%;
+}
+
+}
+
