@@ -534,16 +534,7 @@ header .fa-arrow-left {
   justify-content: center;
 }
 
-/*.btn{
 
-position: fixed;
-top: 85%;
-left: -300%;
-p{
-  font-weight: 250px;
-  text-align: center;
-}
-}*/
 @media (min-width: 1290px) {
   .menu {
     display: flex;
