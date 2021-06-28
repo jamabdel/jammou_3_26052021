@@ -1,13 +1,14 @@
 .btn {
   color: #fbfbfb;
   height: 3.5rem;
-  min-width: 15rem;
+  min-width: 10rem;
   border-radius: 2rem;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   -webkit-box-shadow: 2px 5px 10px #aaaaaa;
           box-shadow: 2px 5px 10px #aaaaaa;
   padding: 0 2rem;
   margin-bottom: 1rem;
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

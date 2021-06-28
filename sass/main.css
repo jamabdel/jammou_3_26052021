@@ -517,6 +517,11 @@ footer i {
   margin-left: 10px;
 }
 
+.footer {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
 @media all and (max-width: 425px) {
   h4 {
     width: 90%;
@@ -627,10 +632,10 @@ header .fa-arrow-left {
 
 .restaurant {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1350px;
   height: 100%;
   margin: 0 auto;
-  background-color: #efefef;
+  background-color: #F6F6F6;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   padding: 30px 20px 0;
@@ -738,7 +743,7 @@ header .fa-arrow-left {
   margin: 5px 0 0 15px;
 }
 .menu .title {
-  max-width: 250px;
+  max-width: 254px;
   font-size: 16px;
   margin: 5px 0 5px 15px;
 }
@@ -769,16 +774,27 @@ header .fa-arrow-left {
   font-size: 20px;
 }
 
-button {
-  position: fixed;
-  top: 85%;
-  left: -300%;
+.command {
+  background-color: #F6F6F6;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-button p {
+
+/*.btn{
+
+position: fixed;
+top: 85%;
+left: -300%;
+p{
   font-weight: 250px;
   text-align: center;
 }
-
+}*/
 @media (min-width: 1290px) {
   .menu {
     display: -webkit-box;
@@ -788,7 +804,6 @@ button p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 500px;
   }
   .menu .mac {
     display: -webkit-box;
@@ -842,6 +857,11 @@ button p {
     position: fixed;
     top: 85%;
     left: 37%;
+  }
+
+  footer {
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
   }
 }
 .loader {
@@ -903,13 +923,14 @@ button p {
 .btn {
   color: #fbfbfb;
   height: 3.5rem;
-  min-width: 15rem;
+  min-width: 10rem;
   border-radius: 2rem;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   -webkit-box-shadow: 2px 5px 10px #aaaaaa;
           box-shadow: 2px 5px 10px #aaaaaa;
   padding: 0 2rem;
   margin-bottom: 1rem;
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
