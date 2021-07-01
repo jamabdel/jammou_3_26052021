@@ -3,6 +3,7 @@
   background: linear-gradient(darken(#f6f6f6, 20%), darken(#f6f6f6, 5%) 10%);
   display: flex;
   justify-content: center;
+
   .input {
     width: 11rem;
     text-align: center;
@@ -20,26 +21,27 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .explorer h2 {
   margin: 0;
 }
+
 .explorer p {
   font-size: 1.3rem;
   font-weight: normal;
 }
+
 .explorer_link {
   text-decoration: none;
   display: flex;
   justify-content: center;
- // position: fixed;
- 
-  
 }
 
 
 
 .run {
   padding: 2em 1em;
+
   .title {
     width: 100%;
     margin-bottom: 1em;
@@ -48,6 +50,7 @@
     font-size: 26px;
     padding: 1em 0 0;
   }
+
   .item {
     display: flex;
     background: lighten(#dddddd, 10%);
@@ -61,11 +64,13 @@
 
     &:hover {
       background: lighten($color3, 35%);
+
       i {
         color: $color3;
       }
     }
   }
+
   .number {
     color: white;
     background: $color3;
@@ -74,11 +79,13 @@
     position: absolute;
     left: -15px;
   }
+
   .icon {
     color: darken(#f6f6f6, 40%);
     font-size: 20px;
     margin: 0.5em 1em;
   }
+
   .subtitle {
     font-weight: 600;
     display: flex;
@@ -91,20 +98,24 @@
   .run {
     @include flexbox;
     margin: 1em 0;
+
     .item {
       height: 115px;
       margin: 1em 2em;
       @include flexbox($direction: column, $wrap: nowrap);
     }
+
     .number {
       top: -15px;
       margin: auto;
       left: unset;
     }
+
     .icon {
       top: 10px;
       position: absolute;
     }
+
     .subtitle {
       padding: 1em;
       display: flex;
@@ -117,7 +128,7 @@
 
 
 
- .box {
+.box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,6 +136,7 @@
   padding-top: 15px;
   padding-bottom: 50px;
 }
+
 .carte {
   background-color: white;
   display: flex;
@@ -133,10 +145,12 @@
   border-radius: 15px;
   margin-bottom: 15px;
   box-shadow: $shadow;
+
   a {
     text-decoration: none;
     color: black;
   }
+
   &:hover {
     box-shadow: 0 15px 30px -10px black;
   }
@@ -145,6 +159,7 @@
     position: relative;
     width: 100%;
     height: 180px;
+
     img {
       width: 100%;
       height: 100%;
@@ -152,6 +167,7 @@
       border-top-right-radius: 15px;
       object-fit: cover;
     }
+
     .new {
       background-color: $color5;
       text-align: center;
@@ -166,30 +182,35 @@
       height: 30px;
     }
 
-    
+
 
   }
+
   .info {
     display: inline-block;
     position: relative;
     padding-bottom: 5px;
     line-height: 0px;
+
     .titre {
       width: 80%;
     }
+
     p {
       font-size: 14px;
       margin-left: 10px;
       font-weight: 500;
     }
+
     h5 {
       font-weight: bold;
       font-size: 14px;
       margin-left: 10px;
     }
-    
+
   }
 }
+
 .footer {
   transform: translateY(0%);
 }
@@ -200,25 +221,30 @@
     width: 90%;
     text-align: left;
   }
+
   h4 {
     text-align: center;
   }
 }
+
 @media all and (min-width: 769px) {
 
   .box {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
     h4 {
       width: 100%;
       text-align: center;
     }
+
     .carte {
-    width: 20%;
-    margin-right: 30px;
-    .coeur {
-      right: 11%;
+      width: 20%;
+      margin-right: 30px;
+
+      .coeur {
+        right: 11%;
       }
     }
   }

@@ -7,9 +7,6 @@
     transform: rotate(360deg) scale(1);}
 }
 
-
-
-
 @keyframes fill {
 	from {
 		transform: scale(0);
@@ -50,14 +47,14 @@
 
 }
 
-@keyframes fadeIn {
+@keyframes fadeIny {
     0% {
       opacity: 0;
-      transform: translatex(-200px);
+      transform: translatey(200px);
     }
     100% {
       opacity: 1;
-      transform: translateX(0);
+      transform: translatey(0);
     }
   }
 
@@ -82,7 +79,7 @@
 
 @keyframes group{
 	from {
-		left: -50rem;
+		left: -150rem;
 	}
 	to {
 		left: 0;

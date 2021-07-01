@@ -1,6 +1,6 @@
 
 .loader{
-  background: content-box radial-gradient( #99E2D0,#FF79DA);
+  background: content-box radial-gradient(white,#FF79DA);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -28,7 +28,7 @@
 .spinner{
     width: 100px;
     height: 100px;
-    background: $color4 left 50% / 100% 60% no-repeat url("/img/restaurant.svg");
+    background: $color4 left 50% / 100% 60% no-repeat url("./src/img/restaurant.svg");
     border-radius: 50%;
     position: relative;
     margin: 50px;

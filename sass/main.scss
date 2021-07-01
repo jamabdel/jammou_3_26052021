@@ -1,23 +1,25 @@
 body {
 	width: 100%;
-	padding: 0; 
+	padding: 0;
 	margin: 0;
-    font-family: Roboto, sans-serif;
+	font-family: Roboto, sans-serif;
 	font-size: 1.1rem;
 }
+
 h1 {
 	font-weight: normal;
-    font-family: Shrikhand,sans-serif;
-}
-p {
-	text-decoration: none;
-		  }
-h1 {
+	font-family: Shrikhand, sans-serif;
 	font-size: 2rem;
 }
-* {
-	box-sizing: border-box;		
+
+p {
+	text-decoration: none;
 }
+
+* {
+	box-sizing: border-box;
+}
+
 @import "utils/_variables";
 @import "utils/mixins";
 @import "utils/keyframes";
@@ -30,4 +32,3 @@ h1 {
 @import "components/button";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
-

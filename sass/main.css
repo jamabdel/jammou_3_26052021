@@ -706,8 +706,24 @@ header .fa-arrow-left {
   height: 70px;
   padding: 0.5em;
   cursor: pointer;
-  -webkit-animation: group 800ms both ease-out;
-          animation: group 800ms both ease-out;
+  -webkit-animation: fadeIn ease-out;
+          animation: fadeIn ease-out;
+}
+.menu .meal:nth-of-type(1) {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+.menu .meal:nth-of-type(2) {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.menu .meal:nth-of-type(3) {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+.menu .meal:nth-of-type(4) {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 .menu .meal:hover .title, .menu .meal:hover .text {
   -webkit-transition: all 2s ease;
