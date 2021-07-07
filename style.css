@@ -550,7 +550,7 @@ header .fa-arrow-left {
 
 .command {
   background-color: #F6F6F6;
-  padding: 3rem;
+  padding: 3rem 3rem 5rem;
   display: flex;
   justify-content: center;
 }
@@ -624,7 +624,7 @@ header .fa-arrow-left {
 }
 @media all and (min-width: 419px) {
   footer {
-    transform: translateY(-35%);
+    transform: translateY(-30%);
   }
 }
 .loader {
