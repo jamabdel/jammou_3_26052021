@@ -135,7 +135,14 @@
   background-color: $color6;
   padding-top: 15px;
   padding-bottom: 50px;
+
+  h2 {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
 }
+
 
 .carte {
   background-color: white;
@@ -204,7 +211,7 @@
 
     h5 {
       font-weight: bold;
-      font-size: 14px;
+      font-size: 16px;
       margin-left: 10px;
     }
 
@@ -234,9 +241,9 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    h4 {
+    h2 {
       width: 100%;
-      text-align: center;
+      text-align: left;
     }
 
     .carte {
@@ -244,7 +251,7 @@
       margin-right: 30px;
 
       .coeur {
-        right: 11%;
+        right: 20%;
       }
     }
   }
@@ -258,4 +265,8 @@
     align-items: center;
     margin: 8em 8em;
   }
+}
+
+.toto{
+  @include flexbox($justify: space-between);
 }

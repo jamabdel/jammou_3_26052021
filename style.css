@@ -263,6 +263,11 @@ footer i {
   padding-top: 15px;
   padding-bottom: 50px;
 }
+.box h2 {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+}
 
 .carte {
   background-color: white;
@@ -321,7 +326,7 @@ footer i {
 }
 .carte .info h5 {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 10px;
 }
 
@@ -345,16 +350,16 @@ footer i {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .box h4 {
+  .box h2 {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
   .box .carte {
     width: 20%;
     margin-right: 30px;
   }
   .box .carte .coeur {
-    right: 11%;
+    right: 20%;
   }
 }
 @media (min-width: 1190px) {
@@ -366,6 +371,13 @@ footer i {
     margin: 8em 8em;
   }
 }
+.toto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .coeur {
   cursor: pointer;
   font-size: 1.5rem;
@@ -423,7 +435,7 @@ header .fa-arrow-left {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   padding: 30px 20px 0;
-  transform: translateY(-15%);
+  transform: translateY(-5%);
   display: flex;
   flex-direction: column;
 }
@@ -437,7 +449,6 @@ header .fa-arrow-left {
   font-size: 24px;
   font-weight: normal;
   font-family: "Shrikhand", cursive;
-  padding-left: 20px;
 }
 
 .titlecontainer {
@@ -446,6 +457,7 @@ header .fa-arrow-left {
 }
 .titlecontainer .coeur {
   top: 50px;
+  right: 10%;
 }
 
 .menu {
@@ -499,7 +511,7 @@ header .fa-arrow-left {
   animation: check 1s ease;
 }
 .menu .meal:hover .price {
-  transition: margin-right 2s ease-in-out;
+  transition: margin-right 2s 0.5s;
   right: 70px;
 }
 .menu .price {
@@ -543,6 +555,25 @@ header .fa-arrow-left {
   justify-content: center;
 }
 
+@media screen and (max-width: 414px) {
+  h4 {
+    width: 90%;
+    text-align: left;
+  }
+
+  .coeur {
+    top: 20px;
+    right: 55px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  footer {
+    transform: translateY(-35%);
+  }
+}
 @media (min-width: 1290px) {
   .menu {
     display: flex;
@@ -587,6 +618,11 @@ header .fa-arrow-left {
     left: 37%;
   }
 
+  footer {
+    transform: translateY(-15%);
+  }
+}
+@media all and (min-width: 419px) {
   footer {
     transform: translateY(-35%);
   }
