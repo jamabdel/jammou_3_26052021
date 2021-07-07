@@ -404,7 +404,7 @@ header {
 }
 header .logo img {
   width: 100%;
-  padding: 35px 0 0 0;
+  padding: 35px 0 10px 0;
 }
 header .fa-arrow-left {
   position: absolute;
